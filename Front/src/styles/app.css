@@ -1,0 +1,7 @@
+/* Car Style - Main file (BEM) */
+/* This project use the BEM methodology, if you already don't know it, make a cup of coffee, take a sit and read about it */
+/* Probably it will help you: https://en.bem.info/methodology/ */
+
+/* pages */
+@import "./pages/list.css";
+@import "./pages/form.css";

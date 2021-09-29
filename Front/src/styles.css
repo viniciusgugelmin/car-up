@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+/* main */
+@import "./styles/app.css";
+
+/* configuration */
+@import "./styles/config.css";
+
+/* variables */
+@import "./styles/variables.css";

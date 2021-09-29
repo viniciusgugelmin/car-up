@@ -1,0 +1,82 @@
+:root {
+    --up-form--input-pw: 15px;
+    --up-form--input-w: calc(100% - (var(--up-form--input-pw) * 2));
+}
+
+.up-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: var(--up-background);
+    font-family: var(--up-font-family);
+    font-size: var(--up-font-size);
+}
+
+.up-form__box-wrapper {
+    max-width: 400px;
+    padding: 35px 35px 55px 35px;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+.up-form__title {
+    margin-bottom: 30px;
+}
+
+.up-form__title h1 {
+    margin-bottom: 10px;
+}
+
+.up-form__form-fields {
+    margin-bottom: 15px;
+}
+
+.up-form__form-fields * {
+    display: block;
+    width: 100%;
+}
+
+.up-form__form-fields a {
+    text-align: center;
+}
+
+.up-form__form-fields label {
+    font-size: 12px;
+}
+
+.up-form__form-fields input[type="text"],
+.up-form__form-fields input[type="password"] {
+    height: 40px;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: var(--up-form--input-w);
+    padding: 0 var(--up-form--input-pw);
+}
+
+.up-form__remember {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+}
+
+.up-form__remember input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.submit {
+    height: 40px;
+    background: #3f51b5;
+    color: #fff;
+    border: 0;
+    margin: 20px 0;
+    border-radius: 3px;
+    font-size: 16px;
+}

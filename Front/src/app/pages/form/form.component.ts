@@ -2,10 +2,10 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
     selector: "app-root",
-    templateUrl: "./app.component.html",
+    templateUrl: "./form.component.html",
 })
-export class AppComponent implements OnInit {
-    title = "Car";
+export class FormComponent implements OnInit {
+    title = "Car - form";
 
     // mounted
     ngOnInit(): void {
