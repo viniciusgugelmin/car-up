@@ -1,5 +1,40 @@
 body {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
+    background: var(--up-background);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.up-header {
+    background: var(--up-header);
+    padding: 25px 10px;
+}
+
+.up-header__wrapper {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+}
+
+.up-header__link {
+    margin: auto;
+    text-align: center;
+    max-width: 150px;
+    min-width: 150px;
+    padding: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--up-font-family);
+    color: white;
+    background: var(--up-pink);
+    box-shadow: inset 0 0 0 0 var(--up-header);
+    outline: none;
+    text-shadow: var(--up-text-shadow);
+    border: var(--up-border);
+    transition: box-shadow var(--up-transition);
+}
+
+.up-header__link:hover {
+    box-shadow: inset 150px 0 0 0 var(--up-header);
 }

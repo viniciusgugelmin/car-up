@@ -1,2 +1,7 @@
-<header class="up-header"></header>
+<header class="up-header">
+    <nav class="up-header__wrapper">
+        <a class="up-header__link" [routerLink]="['/list']">List</a>
+        <a class="up-header__link" [routerLink]="['/form']">Form</a>
+    </nav>
+</header>
 <router-outlet></router-outlet>

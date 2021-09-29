@@ -1,6 +1,15 @@
 :root {
-  --up-background: #c7c7c7;
-  --up-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen;
-  --up-font-size: 14px;
+    --up-background: #ffe18f;
+    --up-header: #f5b400;
+    --up-pink: rgb(255, 0, 68);
+
+    --up-border: 2px solid white;
+    --up-border-radius: 5px;
+
+    --up-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen;
+    --up-font-size: 14px;
+    --up-text-shadow: 1px 1px black;
+
+    --up-transition: 0.25s ease-in;
 }

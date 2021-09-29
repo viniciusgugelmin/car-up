@@ -9,6 +9,10 @@ export class FormComponent implements OnInit {
 
     // mounted
     ngOnInit(): void {
+        this.getTitle();
+    }
+
+    getTitle() {
         document.title = this.title;
     }
 }

@@ -9,6 +9,10 @@ export class ListComponent implements OnInit {
 
     // mounted
     ngOnInit(): void {
+        this.getTitle();
+    }
+
+    getTitle() {
         document.title = this.title;
     }
 }
