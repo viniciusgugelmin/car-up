@@ -1,0 +1,38 @@
+###
+POST https://localhost:5001/api/marca/
+Content-Type: application/json
+
+{
+    "Nome": "Lorem Ipsum",
+    "Fabricante": "Lorem ipsum",
+    "Representante": "Lorem ipsum"
+}
+###
+
+###
+GET https://localhost:5001/api/marca/
+###
+
+###
+GET https://localhost:5001/api/marca/1
+###
+
+###
+GET https://localhost:5001/api/marca/1/modelos
+###
+
+###
+PUT https://localhost:5001/api/marca/
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "Nome": "Lorem",
+    "Fabricante": "Lorem",
+    "Representante": "Lorem"
+}
+
+
+###
+DELETE  https://localhost:5001/api/marca/1
+###

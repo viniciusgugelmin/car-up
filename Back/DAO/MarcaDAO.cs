@@ -2,6 +2,8 @@ using Back.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Back.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Back.DAO
 {
@@ -14,7 +16,20 @@ namespace Back.DAO
 
     public List<Marca> List() => _dataContext.Marcas.ToList();
 
-    public Marca FindById(int id) => _dataContext.Marcas.Find(id);
+    public Marca FindById(int id) {
+        Marca marca = _dataContext.Marcas.Find(id);
+
+        _dataContext.Marcas.Include(m => m.Modelo).Load();
+
+        return marca;
+    }
+
+    public Marca FindWithModelos(int id)
+    {
+        return _dataContext.Marcas
+            .Include(m => m.Modelo)
+            .FirstOrDefault(m => m.Id == id);
+    }
 
     public bool MarcaExists(int? id)
     {

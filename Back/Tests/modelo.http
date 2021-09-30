@@ -1,0 +1,40 @@
+###
+POST https://localhost:5001/api/modelo/
+Content-Type: application/json
+
+{
+    "MarcaId": 1,
+    "Nome": "Lorem ipsum",
+    "Categoria": "Lorem ipsum",
+    "Versao": "Lorem ipsum"
+}
+###
+
+###
+GET https://localhost:5001/api/modelo/
+###
+
+###
+GET https://localhost:5001/api/modelo/1
+###
+
+###
+GET https://localhost:5001/api/modelo/1/veiculos
+###
+
+###
+PUT https://localhost:5001/api/modelo/
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "MarcaId": 1,
+    "Nome": "Lorem",
+    "Categoria": "Lorem",
+    "Versao": "Lorem"
+}
+
+
+###
+DELETE  https://localhost:5001/api/modelo/1
+###

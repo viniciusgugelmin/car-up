@@ -2,6 +2,7 @@ using Back.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Back.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Back.DAO
 {
@@ -14,7 +15,21 @@ namespace Back.DAO
 
     public List<Modelo> List() => _dataContext.Modelos.ToList();
 
-    public Modelo FindById(int id) => _dataContext.Modelos.Find(id);
+    public Modelo FindById(int id) {
+        Modelo modelo = _dataContext.Modelos.Find(id);
+
+        _dataContext.Modelos.Include(m => m.Veiculo).Include(m => m.Marca).Load();
+
+        return modelo;
+    } 
+
+    public Modelo FindWithDetails(int id)
+    {
+        return _dataContext.Modelos
+            .Include(m => m.Veiculo)
+            .Include(m => m.Marca)
+            .FirstOrDefault(m => m.Id == id);
+    }
 
     public bool ModeloExists(int? id)
     {
