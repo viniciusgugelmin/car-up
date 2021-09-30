@@ -51,6 +51,7 @@ namespace Back
             });
 
             // DAO Scopes
+            services.AddScoped<VendedorDAO>();
             services.AddScoped<MarcaDAO>();
             services.AddScoped<ModeloDAO>();
             services.AddScoped<VeiculoDAO>();

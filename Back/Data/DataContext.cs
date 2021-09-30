@@ -13,6 +13,8 @@ namespace Back.Data
 
         /// Tables
 
+        public DbSet<Vendedor> Vendedores { get; set; }
+
         public DbSet<Marca> Marcas { get; set; }
 
         public DbSet<Modelo> Modelos { get; set; }

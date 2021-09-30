@@ -1,0 +1,34 @@
+###
+POST https://localhost:5001/api/vendedor/
+Content-Type: application/json
+
+{
+    "Nome": "Lorem ipsum",
+    "Sobrenome": "Lorem ipsum",
+    "Email": "Lorem ipsum"
+}
+###
+
+###
+GET https://localhost:5001/api/vendedor/
+###
+
+###
+GET https://localhost:5001/api/vendedor/1
+###
+
+###
+PUT https://localhost:5001/api/vendedor/
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "Nome": "Lorem",
+    "Sobrenome": "Lorem",
+    "Email": "Lorem"
+}
+
+
+###
+DELETE  https://localhost:5001/api/vendedor/1
+###

@@ -16,7 +16,8 @@ namespace Back.DAO
 
     public List<Marca> List() => _dataContext.Marcas.ToList();
 
-    public Marca FindById(int id) {
+    public Marca FindById(int id) 
+    {
         Marca marca = _dataContext.Marcas.Find(id);
 
         _dataContext.Marcas.Include(m => m.Modelo).Load();
