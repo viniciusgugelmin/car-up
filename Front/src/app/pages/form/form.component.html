@@ -35,5 +35,40 @@
                 </button>
             </div>
         </form>
+        <br />
+        <div class="up-form__title">
+            <h1>Marca</h1>
+        </div>
+        <form action="">
+            <div class="up-form__form-fields">
+                <label>Nome:</label>
+                <input type="text" #marcaNome />
+            </div>
+
+            <div class="up-form__form-fields">
+                <label>Fabricante:</label>
+                <input type="text" #marcaFabricante />
+            </div>
+
+            <div class="up-form__form-fields">
+                <label>Representante:</label>
+                <input type="text" #marcaRepresentante />
+            </div>
+
+            <div class="up-form__form-fields">
+                <button
+                    class="submit"
+                    (click)="
+                        createMarca(
+                            marcaNome.value,
+                            marcaFabricante.value,
+                            marcaRepresentante.value
+                        )
+                    "
+                >
+                    CRIAR
+                </button>
+            </div>
+        </form>
     </div>
 </section>

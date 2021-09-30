@@ -39,4 +39,27 @@ export class FormComponent implements OnInit {
                 console.log("finally");
             });
     }
+
+    createMarca(
+        marcaNome: string,
+        marcaFabricante: string,
+        marcaRepresentante: string
+    ) {
+        axios
+            .post(`https://localhost:5001/api/marca`, {
+                Nome: marcaNome,
+                Fabricante: marcaFabricante,
+                Representante: marcaRepresentante,
+            })
+            .then((response) => {
+                alert("Success!");
+            })
+            .catch((error) => {
+                console.log(error);
+                alert("Error, check the console!");
+            })
+            .finally(() => {
+                console.log("finally");
+            });
+    }
 }
