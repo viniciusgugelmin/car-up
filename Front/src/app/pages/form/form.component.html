@@ -1,23 +1,38 @@
 <section class="up-form">
     <div class="up-form__box-wrapper">
         <div class="up-form__title">
-            <h1>Login</h1>
+            <h1>Vendedor</h1>
         </div>
 
         <form action="">
             <div class="up-form__form-fields">
-                <label>Matrícula:</label>
-                <input type="text" placeholder="Digite aqui sua matrícula" />
+                <label>Nome:</label>
+                <input type="text" #vendedorNome />
             </div>
 
             <div class="up-form__form-fields">
-                <label>Senha:</label>
-                <input type="password" placeholder="Digite aqui sua senha" />
+                <label>Sobrenome:</label>
+                <input type="text" #vendedorSobrenome />
             </div>
 
             <div class="up-form__form-fields">
-                <button class="submit">Entrar</button>
-                <!--<a href="#">Esqueci minha senha</a>-->
+                <label>Email:</label>
+                <input type="text" #vendedorEmail />
+            </div>
+
+            <div class="up-form__form-fields">
+                <button
+                    class="submit"
+                    (click)="
+                        createVendedor(
+                            vendedorNome.value,
+                            vendedorSobrenome.value,
+                            vendedorEmail.value
+                        )
+                    "
+                >
+                    CRIAR
+                </button>
             </div>
         </form>
     </div>
